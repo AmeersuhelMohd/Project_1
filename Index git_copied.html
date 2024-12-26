@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ameer Suhel Mohammed</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #333;
+        }
+
+        header {
+            background-color: #2d3e50; /* Dark blue for sophistication */
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        header nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #41b6e6; /* Soft blue for accent */
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #fff; /* White hover effect */
+            border-bottom: 2px solid #41b6e6; /* Subtle line under hover */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            color: #2d3e50;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .profile-image {
+            display: block;
+            margin: 30px auto;
+            width: 180px;
+            height: 180px;
+            background-color: #ddd;
+            border-radius: 50%;
+            background-image: url('path-to-placeholder-image.jpg'); /* Replace with actual path */
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adding a glossy shadow */
+        }
+
+        .skills, .employment, .education {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft card shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Lift effect on hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        footer {
+            background-color: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            background-color: #41b6e6;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #004f71; /* Deep blue on hover */
+        }
+
+        /* Subtle spacing and alignment for sections */
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #666;
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            color: #333;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ameer Suhel Mohammed</h1>
+        <p>+1 (317) 737-5890 | <a href="mailto:ameersuhel123@gmail.com">ameersuhel123@gmail.com</a> | <a href="https://linkedin.com/in/ameer-suhel">LinkedIn</a></p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#employment">Employment</a>
+            <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="profile-image"></div>
+            <p>I am a dedicated professional with expertise in health informatics, ETL processes, database management, and research. With a strong academic background and certifications, I bring value to organizations through my technical and analytical skills.</p>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="education">
+                <div class="card">
+                    <h3>Master’s in Health Informatics</h3>
+                    <p>Indiana University-Purdue University Indianapolis<br>Aug 2021 – May 2023</p>
+                </div>
+                <div class="card">
+                    <h3>Bachelor of Pharmacy</h3>
+                    <p>Acharya Nagarjuna University<br>Aug 2016 – May 2020</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="employment" class="section">
+            <h2>Employment</h2>
+            <div class="employment">
+                <div class="card">
+                    <h3>EPIC-SAP S4 HANA Developer, ETL Developer</h3>
+                    <p>Eskenazi Health, HHC<br>April 2024 – Present</p>
+                    <ul>
+                        <li>Configured and maintained Epic and SAP S/4 HANA databases.</li>
+                        <li>Designed, modified, and monitored ETL/ELT processes.</li>
+                        <li>Developed SAP S/4 HANA data models tailored to requirements.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Research Assistant</h3>
+                    <p>Herman B Wells Center, IU School of Medicine<br>Mar 2022 – May 2023</p>
+                    <ul>
+                        <li>Conducted preclinical studies and analyzed cancer research data.</li>
+                        <li>Applied PCR and gel electrophoresis for molecular differentiation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="card">
+                    <h3>Health Systems</h3>
+                    <p>EPIC Systems</p>
+                </div>
+                <div class="card">
+                    <h3>Data Management</h3>
+                    <p>SSIS, SAP S4 HANA</p>
+                </div>
+                <div class="card">
+                    <h3>Programming</h3>
+                    <p>SAS, SQL, SPSS, R-studio, Tableau, Python</p>
+                </div>
+                <div class="card">
+                    <h3>Visualization</h3>
+                    <p>Power BI, Tableau</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>EPIC – Cogito Fundamentals (COG170)</li>
+                <li>EPIC – Clarity Data Model (CLR110)</li>
+                <li>EPIC – Caboodle Data Model (CDW110)</li>
+                <li>EPIC – Clinical Data Models (COG240)</li>
+                <li>Good Clinical Practice (GCP)</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Ameer Suhel Mohammed. All Rights Reserved.
+    </footer>
+</body>
+</html>
