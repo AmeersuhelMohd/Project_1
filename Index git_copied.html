@@ -1,193 +1,185 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <title>Portfolio Homepage</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Your Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004f71;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #41b6e6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .section h2 {
+            color: #004f71;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            position: relative;
+        }
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #41b6e6;
+            margin: 10px auto 0;
+        }
+        footer {
+            background-color: #004f71;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            background-color: #41b6e6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #c4d600;
+        }
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .skills div, .projects div {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .skills div:hover, .projects div:hover {
+            transform: translateY(-10px);
+        }
+        .skills div img, .projects div img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .contact a {
+            color: #004f71;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact a:hover {
+            color: #41b6e6;
+        }
+    </style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="nav-wrapper">
-      <div class="left-side">
-        <div class="nav-link-wrapper active-nav-link">
-          <a href="index.html">Home</a>
-        </div>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <div class="nav-link-wrapper">
-          <a href="about.html">About</a>
-        </div>
-      </div>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a data professional with expertise in configuring and maintaining Epic and SAP S/4 HANA databases, ensuring optimal performance and data integrity. Passionate about data analytics, visualization, and efficient workflows.</p>
+        </section>
 
-      <div class="right-side">
-        <div class="brand">
-          JORDAN HUDGENS
-        </div>
-      </div>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Database Icon">
+                    <h3>Database Management</h3>
+                    <p>SAP S/4 HANA, Epic, SSIS</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="ETL Icon">
+                    <h3>ETL/ELT Optimization</h3>
+                    <p>Efficient data workflows and transformations</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Tools Icon">
+                    <h3>Tools</h3>
+                    <p>Power BI, SQL</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Dashboard Icon">
+                    <h3>Power BI Dashboard</h3>
+                    <p>Visualized ED visits, demographics, and trends.</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Data Icon">
+                    <h3>SAP HANA Models</h3>
+                    <p>Operational models for health corporations.</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/50" alt="Optimization Icon">
+                    <h3>ETL Optimization</h3>
+                    <p>Enhanced workflows for better performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </section>
     </div>
 
-    <div class="content-wrapper">
-      <div class="portfolio-items-wrapper">
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
-
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/quip.png" alt="">
-            </div>
-
-            <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/devcamp.png" alt="">
-            </div>
-
-            <div class="subtitle">Coding bootcamp and learning management system.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/eventbrite.png" alt="">
-            </div>
-
-            <div class="subtitle">Eventbrite is the leading event management platform on the web with millions of individuals utilizing their applications
-              to find, register or, and management events in numerous industries.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/shop-hacker.png" alt="">
-            </div>
-
-            <div class="subtitle">Shop Hacker allows you to easily import digital products such as elearning courses, software, and games directly
-              into your ecommerce store.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/crondose.png" alt="">
-            </div>
-
-            <div class="subtitle">Online tutorials and productivity tips.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/dailysmarty.png" alt="">
-            </div>
-
-            <div class="subtitle">Keep track of what you learn every day.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/dashtrack.png" alt="">
-            </div>
-
-            <div class="subtitle">What you track improves. DashTrack is a journal that makes it easy to track your daily tasks and make the most
-              of your time each day.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/devtrunk.png" alt="">
-            </div>
-
-            <div class="subtitle">Online shop for developer happiness.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">Online technology tutorials.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio10.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/ministry-safe.png" alt="">
-            </div>
-
-            <div class="subtitle">A complete child safety system for organizations.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio11.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/open-devos.png" alt="">
-            </div>
-
-            <div class="subtitle">Publish and share daily devotionals.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio12.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/toastability.png" alt="">
-            </div>
-
-            <div class="subtitle">Easy way to manage the digital life of your bar or restaurant.</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
+    <footer>
+        &copy; 2024 Your Name. All Rights Reserved.
+    </footer>
 </body>
-
-<script>
-  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
-
-  portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.add('image-blur');
-    });
-
-    portfolioItem.addEventListener('mouseout', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.remove('image-blur');
-    });
-  });
-
-</script>
-
 </html>
